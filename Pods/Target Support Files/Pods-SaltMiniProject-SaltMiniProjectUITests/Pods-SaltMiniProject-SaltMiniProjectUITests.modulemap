@@ -1,0 +1,6 @@
+framework module Pods_SaltMiniProject_SaltMiniProjectUITests {
+  umbrella header "Pods-SaltMiniProject-SaltMiniProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
