@@ -17,6 +17,11 @@
 		5ADD34152AE25471006A47A1 /* SaltMiniProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34142AE25471006A47A1 /* SaltMiniProjectUITestsLaunchTests.swift */; };
 		5ADD34252AE25692006A47A1 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34242AE25692006A47A1 /* Bundle+decode.swift */; };
 		5ADD34272AE256F4006A47A1 /* HomepageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34262AE256F4006A47A1 /* HomepageDataModel.swift */; };
+		5ADD34292AE261D4006A47A1 /* TokenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34282AE261D4006A47A1 /* TokenDataModel.swift */; };
+		5ADD342B2AE263D1006A47A1 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */; };
+		6694B5D53986340B4AD654E9 /* Pods_SaltMiniProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95523F36A0318D9A1FFB6396 /* Pods_SaltMiniProjectTests.framework */; };
+		7F90F8C01C10E817CFEBFF73 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25051BAB298064414CA2CA8 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework */; };
+		E3AD12C07B57FDD067B6E0CA /* Pods_SaltMiniProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013FA6AE9D880E8B75982168 /* Pods_SaltMiniProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DCD8BD95344FD03F1E175E /* Pods-SaltMiniProject-SaltMiniProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject-SaltMiniProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		013FA6AE9D880E8B75982168 /* Pods_SaltMiniProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltMiniProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F817B703269F9F2A96CEB01 /* Pods-SaltMiniProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject.release.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject.release.xcconfig"; sourceTree = "<group>"; };
 		5ADD33EE2AE2546F006A47A1 /* SaltMiniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltMiniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADD33F12AE2546F006A47A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADD33F32AE2546F006A47A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,14 @@
 		5ADD34142AE25471006A47A1 /* SaltMiniProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltMiniProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5ADD34242AE25692006A47A1 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		5ADD34262AE256F4006A47A1 /* HomepageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageDataModel.swift; sourceTree = "<group>"; };
+		5ADD34282AE261D4006A47A1 /* TokenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDataModel.swift; sourceTree = "<group>"; };
+		5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		83E24470230FEF42EA23AA99 /* Pods-SaltMiniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject.debug.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB419122DC182086D8262FE /* Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95523F36A0318D9A1FFB6396 /* Pods_SaltMiniProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltMiniProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C38A2499297E7A8A572A54 /* Pods-SaltMiniProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SaltMiniProjectTests/Pods-SaltMiniProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C10F9E7AEDC417106B06A7E7 /* Pods-SaltMiniProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SaltMiniProjectTests/Pods-SaltMiniProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		F25051BAB298064414CA2CA8 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltMiniProject_SaltMiniProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AD12C07B57FDD067B6E0CA /* Pods_SaltMiniProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6694B5D53986340B4AD654E9 /* Pods_SaltMiniProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F90F8C01C10E817CFEBFF73 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C2312B8F35BB766B82D794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013FA6AE9D880E8B75982168 /* Pods_SaltMiniProject.framework */,
+				F25051BAB298064414CA2CA8 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework */,
+				95523F36A0318D9A1FFB6396 /* Pods_SaltMiniProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5ADD33E52AE2546F006A47A1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				5ADD34072AE25471006A47A1 /* SaltMiniProjectTests */,
 				5ADD34112AE25471006A47A1 /* SaltMiniProjectUITests */,
 				5ADD33EF2AE2546F006A47A1 /* Products */,
+				BC0B9D2F0D51EB67903ACCC5 /* Pods */,
+				12C2312B8F35BB766B82D794 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				5ADD34262AE256F4006A47A1 /* HomepageDataModel.swift */,
+				5ADD34282AE261D4006A47A1 /* TokenDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +174,7 @@
 		5ADD34222AE25661006A47A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +187,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BC0B9D2F0D51EB67903ACCC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83E24470230FEF42EA23AA99 /* Pods-SaltMiniProject.debug.xcconfig */,
+				1F817B703269F9F2A96CEB01 /* Pods-SaltMiniProject.release.xcconfig */,
+				8EB419122DC182086D8262FE /* Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig */,
+				00DCD8BD95344FD03F1E175E /* Pods-SaltMiniProject-SaltMiniProjectUITests.release.xcconfig */,
+				A1C38A2499297E7A8A572A54 /* Pods-SaltMiniProjectTests.debug.xcconfig */,
+				C10F9E7AEDC417106B06A7E7 /* Pods-SaltMiniProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ADD34182AE25471006A47A1 /* Build configuration list for PBXNativeTarget "SaltMiniProject" */;
 			buildPhases = (
+				4D453BAE1D7C8EFC3C2C74E6 /* [CP] Check Pods Manifest.lock */,
 				5ADD33EA2AE2546F006A47A1 /* Sources */,
 				5ADD33EB2AE2546F006A47A1 /* Frameworks */,
 				5ADD33EC2AE2546F006A47A1 /* Resources */,
+				6F7EED583D3E7FA8688C2BE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ADD341B2AE25471006A47A1 /* Build configuration list for PBXNativeTarget "SaltMiniProjectTests" */;
 			buildPhases = (
+				5E42DB98177B6E74CBF63955 /* [CP] Check Pods Manifest.lock */,
 				5ADD34002AE25471006A47A1 /* Sources */,
 				5ADD34012AE25471006A47A1 /* Frameworks */,
 				5ADD34022AE25471006A47A1 /* Resources */,
@@ -196,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ADD341E2AE25471006A47A1 /* Build configuration list for PBXNativeTarget "SaltMiniProjectUITests" */;
 			buildPhases = (
+				620EA66C2DEE13CFA2135200 /* [CP] Check Pods Manifest.lock */,
 				5ADD340A2AE25471006A47A1 /* Sources */,
 				5ADD340B2AE25471006A47A1 /* Frameworks */,
 				5ADD340C2AE25471006A47A1 /* Resources */,
+				0009D379B4C00F740E80DFF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,12 +330,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0009D379B4C00F740E80DFF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D453BAE1D7C8EFC3C2C74E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaltMiniProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E42DB98177B6E74CBF63955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaltMiniProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		620EA66C2DEE13CFA2135200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaltMiniProject-SaltMiniProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7EED583D3E7FA8688C2BE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5ADD33EA2AE2546F006A47A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5ADD33F62AE2546F006A47A1 /* ViewController.swift in Sources */,
+				5ADD342B2AE263D1006A47A1 /* HomePageViewController.swift in Sources */,
+				5ADD34292AE261D4006A47A1 /* TokenDataModel.swift in Sources */,
 				5ADD33F22AE2546F006A47A1 /* AppDelegate.swift in Sources */,
 				5ADD34272AE256F4006A47A1 /* HomepageDataModel.swift in Sources */,
 				5ADD33F42AE2546F006A47A1 /* SceneDelegate.swift in Sources */,
@@ -452,6 +608,7 @@
 		};
 		5ADD34192AE25471006A47A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E24470230FEF42EA23AA99 /* Pods-SaltMiniProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,7 +619,6 @@
 				INFOPLIST_FILE = SaltMiniProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -481,6 +637,7 @@
 		};
 		5ADD341A2AE25471006A47A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F817B703269F9F2A96CEB01 /* Pods-SaltMiniProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,7 +648,6 @@
 				INFOPLIST_FILE = SaltMiniProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -510,6 +666,7 @@
 		};
 		5ADD341C2AE25471006A47A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C38A2499297E7A8A572A54 /* Pods-SaltMiniProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +687,7 @@
 		};
 		5ADD341D2AE25471006A47A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10F9E7AEDC417106B06A7E7 /* Pods-SaltMiniProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +708,7 @@
 		};
 		5ADD341F2AE25471006A47A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB419122DC182086D8262FE /* Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +727,7 @@
 		};
 		5ADD34202AE25471006A47A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DCD8BD95344FD03F1E175E /* Pods-SaltMiniProject-SaltMiniProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
