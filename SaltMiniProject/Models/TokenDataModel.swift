@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - TokenDataModel
 struct TokenDataModel: Codable {
     let token: String
 }

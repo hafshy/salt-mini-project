@@ -22,7 +22,7 @@ struct HomepageDataModel: Codable {
     }
 }
 
-// MARK: - Datum
+// MARK: - UserInfoData
 struct UserInfoData: Codable {
     let id: Int
     let email, firstName, lastName: String

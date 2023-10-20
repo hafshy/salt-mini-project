@@ -13,7 +13,9 @@ import AlamofireImage
 class UserInfoCell: UITableViewCell {
     static let identifier = "UserInfoCell"
     
-    private let stackView = UIStackView()
+    private let stackView = UIStackView()       // MARK: Stack for name and email(object)
+    
+//  MARK: Avatar picture (object)
     private let avatarView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -22,7 +24,8 @@ class UserInfoCell: UITableViewCell {
         iv.clipsToBounds = true
         return iv
     }()
-    
+
+//  MARK: Full Name Label (object)
     private let fullNameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
@@ -32,7 +35,8 @@ class UserInfoCell: UITableViewCell {
         label.numberOfLines = 2
         return label
     }()
-    
+
+//  MARK: Email Label (object)
     private let emailLabel: UILabel = {
         let label = UILabel()
         label.textColor = .gray
@@ -41,7 +45,8 @@ class UserInfoCell: UITableViewCell {
         label.text = "email_placeholder"
         return label
     }()
-    
+
+//  MARK: Setup Full Name and Email
     private func configureStackView() {
         self.contentView.addSubview(stackView)
         stackView.axis = .vertical
@@ -69,7 +74,7 @@ class UserInfoCell: UITableViewCell {
         ])
     }
     
-    
+//  MARK: Call to execute building cell
     public func configure(userInfo: UserInfoData) {
         AF.request(userInfo.avatar).responseImage { response in
             if let image = response.value {
@@ -81,6 +86,7 @@ class UserInfoCell: UITableViewCell {
         self.setupCell()
     }
     
+//  MARK: Setup all components
     private func setupCell() {
         self.configureStackView()
         self.contentView.addSubview(avatarView)

@@ -8,7 +8,9 @@
 import UIKit
 import Alamofire
 
+//  MARK: Login View (ViewController name to know where the App Entry Code)
 class ViewController: UIViewController {
+//  MARK: View Objects
     private let stackView = UIStackView()
     private let emailTextField = UITextField()
     private let passwordTextField = UITextField()
@@ -16,6 +18,7 @@ class ViewController: UIViewController {
     private let loadingView = UIActivityIndicatorView(style: .large)
     private let alert = UIAlertController(title: "Try Again", message: "Wrong Email or Password", preferredStyle: .alert)
 
+//  MARK: Entry Point
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -24,6 +27,7 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default))
     }
 
+//  MARK: Setup All Components
     func configureStackView() {
         self.view.addSubview(stackView)
         stackView.axis = .vertical
@@ -39,6 +43,7 @@ class ViewController: UIViewController {
         stackView.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -100).isActive = true
     }
 
+//  MARK: Setup Email Field
     func configureEmailTextField() {
         emailTextField.placeholder = "Email"
         emailTextField.keyboardType = .emailAddress
@@ -54,9 +59,9 @@ class ViewController: UIViewController {
             emailTextField.widthAnchor.constraint(equalTo: stackView.widthAnchor),
             emailTextField.heightAnchor.constraint(equalToConstant: 52)
         ])
-    
     }
-    
+
+//  MARK: Setup Password Field
     func configurePasswordTextField() {
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
@@ -73,7 +78,8 @@ class ViewController: UIViewController {
             passwordTextField.heightAnchor.constraint(equalToConstant: 52)
         ])
     }
-    
+
+//  MARK: Setup Button
     func configureSubmitButton() {
         submitButton.backgroundColor = .systemBlue
         submitButton.setTitle("Submit", for: .normal)
@@ -91,7 +97,8 @@ class ViewController: UIViewController {
         ])
         submitButton.addTarget(self, action: #selector(login), for: .touchUpInside)
     }
-    
+
+//  MARK: Loading when fetching API
     private func configureLoadingIndicator() {
         self.view.addSubview(loadingView)
         loadingView.startAnimating()
@@ -101,12 +108,14 @@ class ViewController: UIViewController {
             loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-    
+
+//  MARK: Stop Loading when API fetched
     private func removeLoadingIndicator() {
         loadingView.stopAnimating()
         loadingView.removeFromSuperview()
     }
     
+//  MARK: Fetch Login API
     @objc
     private func login() {
         let params = [
@@ -126,6 +135,5 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
 
