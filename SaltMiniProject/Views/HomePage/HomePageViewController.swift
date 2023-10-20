@@ -67,6 +67,7 @@ class HomePageViewController: UIViewController {
         ])
     }
     
+//  MARK: When Failed to Fetch API
     private func configureTryAgainStackView() {
         self.view.addSubview(tryAgainStackView)
         tryAgainStackView.axis = .vertical
@@ -74,8 +75,6 @@ class HomePageViewController: UIViewController {
         
         configureTryAgainLabel()
         configureTryAgainButton()
-//        configurePasswordTextField()
-//        configureSubmitButton()
         
         tryAgainStackView.translatesAutoresizingMaskIntoConstraints = false
         tryAgainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
@@ -136,7 +135,7 @@ class HomePageViewController: UIViewController {
         loadingView.removeFromSuperview()
     }
     
-//  MARK: Fetch Login API
+//  MARK: Refetch API
     @objc
     private func tryAgain() {
         tryAgainStackView.removeFromSuperview()
