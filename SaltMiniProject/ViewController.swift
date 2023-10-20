@@ -9,14 +9,16 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-    let stackView = UIStackView()
-    let emailTextField = UITextField()
-    let passwordTextField = UITextField()
-    let submitButton = UIButton()
-    let alert = UIAlertController(title: "Try Again", message: "Wrong Email or Password", preferredStyle: .alert)
+    private let stackView = UIStackView()
+    private let emailTextField = UITextField()
+    private let passwordTextField = UITextField()
+    private let submitButton = UIButton()
+    private let loadingView = UIActivityIndicatorView(style: .large)
+    private let alert = UIAlertController(title: "Try Again", message: "Wrong Email or Password", preferredStyle: .alert)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
         configureStackView()
         alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -40,9 +42,8 @@ class ViewController: UIViewController {
     func configureEmailTextField() {
         emailTextField.placeholder = "Email"
         emailTextField.keyboardType = .emailAddress
-        emailTextField.backgroundColor = .white
-        emailTextField.layer.cornerRadius = 12
         emailTextField.autocapitalizationType = .none
+        emailTextField.borderStyle = .roundedRect
         
         stackView.addArrangedSubview(emailTextField)
         
@@ -59,9 +60,8 @@ class ViewController: UIViewController {
     func configurePasswordTextField() {
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
-        passwordTextField.backgroundColor = .white
-        passwordTextField.layer.cornerRadius = 12
         passwordTextField.autocapitalizationType = .none
+        passwordTextField.borderStyle = .roundedRect
         
         stackView.addArrangedSubview(passwordTextField)
         
@@ -78,6 +78,7 @@ class ViewController: UIViewController {
         submitButton.backgroundColor = .systemBlue
         submitButton.setTitle("Submit", for: .normal)
         submitButton.layer.cornerRadius = 12
+        submitButton.tintColor = .white
         
         stackView.addArrangedSubview(submitButton)
         
@@ -91,14 +92,31 @@ class ViewController: UIViewController {
         submitButton.addTarget(self, action: #selector(login), for: .touchUpInside)
     }
     
+    private func configureLoadingIndicator() {
+        self.view.addSubview(loadingView)
+        loadingView.startAnimating()
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    private func removeLoadingIndicator() {
+        loadingView.stopAnimating()
+        loadingView.removeFromSuperview()
+    }
+    
     @objc
     private func login() {
         let params = [
             "email": emailTextField.text,
             "password": passwordTextField.text
         ]
+        self.configureLoadingIndicator()
         let request = AF.request("https://reqres.in/api/login", method: .post, parameters: params)
         request.responseDecodable(of: TokenDataModel.self) { response in
+            self.removeLoadingIndicator()
             if let successResponse = response.value {
                 UserDefaults.standard.set(successResponse.token, forKey: "token")
                 let homepageVC = HomePageViewController()

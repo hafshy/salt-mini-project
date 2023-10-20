@@ -10,7 +10,7 @@ import Foundation
 // MARK: - HomepageDataModel
 struct HomepageDataModel: Codable {
     let page, perPage, total, totalPages: Int
-    let data: [Datum]
+    let data: [UserInfoData]
     let support: Support
 
     enum CodingKeys: String, CodingKey {
@@ -23,7 +23,7 @@ struct HomepageDataModel: Codable {
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct UserInfoData: Codable {
     let id: Int
     let email, firstName, lastName: String
     let avatar: String

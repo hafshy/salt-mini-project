@@ -19,6 +19,7 @@
 		5ADD34272AE256F4006A47A1 /* HomepageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34262AE256F4006A47A1 /* HomepageDataModel.swift */; };
 		5ADD34292AE261D4006A47A1 /* TokenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD34282AE261D4006A47A1 /* TokenDataModel.swift */; };
 		5ADD342B2AE263D1006A47A1 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */; };
+		5ADD342E2AE26A4A006A47A1 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD342D2AE26A4A006A47A1 /* UserInfoCell.swift */; };
 		6694B5D53986340B4AD654E9 /* Pods_SaltMiniProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95523F36A0318D9A1FFB6396 /* Pods_SaltMiniProjectTests.framework */; };
 		7F90F8C01C10E817CFEBFF73 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25051BAB298064414CA2CA8 /* Pods_SaltMiniProject_SaltMiniProjectUITests.framework */; };
 		E3AD12C07B57FDD067B6E0CA /* Pods_SaltMiniProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013FA6AE9D880E8B75982168 /* Pods_SaltMiniProject.framework */; };
@@ -61,6 +62,7 @@
 		5ADD34262AE256F4006A47A1 /* HomepageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageDataModel.swift; sourceTree = "<group>"; };
 		5ADD34282AE261D4006A47A1 /* TokenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDataModel.swift; sourceTree = "<group>"; };
 		5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		5ADD342D2AE26A4A006A47A1 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		83E24470230FEF42EA23AA99 /* Pods-SaltMiniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject.debug.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject/Pods-SaltMiniProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB419122DC182086D8262FE /* Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SaltMiniProject-SaltMiniProjectUITests/Pods-SaltMiniProject-SaltMiniProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		95523F36A0318D9A1FFB6396 /* Pods_SaltMiniProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltMiniProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +176,7 @@
 		5ADD34222AE25661006A47A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */,
+				5ADD342C2AE26A34006A47A1 /* HomePage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +187,15 @@
 				5ADD34242AE25692006A47A1 /* Bundle+decode.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5ADD342C2AE26A34006A47A1 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				5ADD342A2AE263D1006A47A1 /* HomePageViewController.swift */,
+				5ADD342D2AE26A4A006A47A1 /* UserInfoCell.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		BC0B9D2F0D51EB67903ACCC5 /* Pods */ = {
@@ -439,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADD33F62AE2546F006A47A1 /* ViewController.swift in Sources */,
+				5ADD342E2AE26A4A006A47A1 /* UserInfoCell.swift in Sources */,
 				5ADD342B2AE263D1006A47A1 /* HomePageViewController.swift in Sources */,
 				5ADD34292AE261D4006A47A1 /* TokenDataModel.swift in Sources */,
 				5ADD33F22AE2546F006A47A1 /* AppDelegate.swift in Sources */,

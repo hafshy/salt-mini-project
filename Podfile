@@ -7,6 +7,7 @@ target 'SaltMiniProject' do
 
   # Pods for SaltMiniProject
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
   target 'SaltMiniProjectTests' do
     inherit! :search_paths
