@@ -12,6 +12,9 @@ import Alamofire
 class HomePageViewController: UIViewController {
     private var userInfoData: [UserInfoData] = []                       // MARK: Loaded User Data
     private let loadingView = UIActivityIndicatorView(style: .large)    // MARK: Loading View (Object)
+    private let tryAgainStackView = UIStackView()
+    private let tryAgainLabel = UILabel()
+    private let tryAgainButton = UIButton()
     
 //  MARK: Table View (Object)
     private let tableView: UITableView = {
@@ -43,8 +46,9 @@ class HomePageViewController: UIViewController {
                 self.tableView.delegate = self
                 self.tableView.dataSource = self
                 self.tableView.rowHeight = 80
+//                self.configureTryAgainStackView()
             } else {
-                print("FAILED BRO")
+                self.configureTryAgainStackView()
             }
         }
     }
@@ -61,6 +65,57 @@ class HomePageViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
         ])
+    }
+    
+    private func configureTryAgainStackView() {
+        self.view.addSubview(tryAgainStackView)
+        tryAgainStackView.axis = .vertical
+        tryAgainStackView.spacing = 16
+        
+        configureTryAgainLabel()
+        configureTryAgainButton()
+//        configurePasswordTextField()
+//        configureSubmitButton()
+        
+        tryAgainStackView.translatesAutoresizingMaskIntoConstraints = false
+        tryAgainStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        tryAgainStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        tryAgainStackView.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -100).isActive = true
+    }
+    
+    private func configureTryAgainLabel() {
+        tryAgainLabel.textColor = .black
+        tryAgainLabel.textAlignment = .center
+        tryAgainLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        tryAgainLabel.text = "Failed to fetch list, please try again"
+        tryAgainLabel.numberOfLines = 2
+        tryAgainStackView.addArrangedSubview(tryAgainLabel)
+        tryAgainLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tryAgainLabel.leadingAnchor.constraint(equalTo: tryAgainStackView.layoutMarginsGuide.leadingAnchor),
+            tryAgainLabel.trailingAnchor.constraint(equalTo: tryAgainStackView.layoutMarginsGuide.trailingAnchor),
+            tryAgainLabel.widthAnchor.constraint(equalTo: tryAgainStackView.widthAnchor),
+            tryAgainLabel.centerXAnchor.constraint(equalTo: tryAgainStackView.centerXAnchor)
+        ])
+    }
+    
+    func configureTryAgainButton() {
+        tryAgainButton.backgroundColor = .systemBlue
+        tryAgainButton.setTitle("Try Again", for: .normal)
+        tryAgainButton.layer.cornerRadius = 12
+        tryAgainButton.tintColor = .white
+        
+        tryAgainStackView.addArrangedSubview(tryAgainButton)
+        
+        tryAgainButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tryAgainButton.leadingAnchor.constraint(equalTo: tryAgainStackView.layoutMarginsGuide.leadingAnchor),
+            tryAgainButton.trailingAnchor.constraint(equalTo: tryAgainStackView.layoutMarginsGuide.trailingAnchor),
+            tryAgainButton.widthAnchor.constraint(equalTo: tryAgainStackView.widthAnchor),
+            tryAgainButton.heightAnchor.constraint(equalToConstant: 52),
+            tryAgainButton.centerXAnchor.constraint(equalTo: tryAgainStackView.centerXAnchor)
+        ])
+        tryAgainButton.addTarget(self, action: #selector(tryAgain), for: .touchUpInside)
     }
 
 //  MARK: Show Loading Indicator (Used when fetching API)
@@ -79,6 +134,13 @@ class HomePageViewController: UIViewController {
     private func removeLoadingIndicator() {
         loadingView.stopAnimating()
         loadingView.removeFromSuperview()
+    }
+    
+//  MARK: Fetch Login API
+    @objc
+    private func tryAgain() {
+        tryAgainStackView.removeFromSuperview()
+        loadDataAndConfigureTableView()
     }
 }
 
